@@ -2,6 +2,8 @@
 # https://leetcode.com/problems/coin-change-2/
 # video explanation: https://youtu.be/DJ4a7cmjZY0
 
+from typing import List
+
 
 def change(amount: int, coins: List[int]) -> int:
     DP = [[0] * (amount + 1) for _ in range(len(coins) + 1)]
