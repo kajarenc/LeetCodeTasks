@@ -8,13 +8,13 @@ class Solution:
 
         n = len(prices)
 
-        dp = {}
-
-        dp['A'] = [0] * n
-        dp['B'] = [0] * n
-        dp['C'] = [float("-inf")] * n
-        dp['D'] = [float("-inf")] * n
-        dp['E'] = [float("-inf")] * n
+        dp = {
+            'A': [0] * n,
+            'B': [0] * n,
+            'C': [float("-inf")] * n,
+            'D': [float("-inf")] * n,
+            'E': [float("-inf")] * n
+        }
 
         dp['B'][0] = - prices[0]
 
