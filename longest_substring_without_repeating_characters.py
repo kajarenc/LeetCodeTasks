@@ -31,6 +31,3 @@ def lengthOfLongestSubstring(s: str) -> int:
     return max_length
 
 
-assert lengthOfLongestSubstring("abcabcbb") == 3
-assert lengthOfLongestSubstring("abba") == 2
-assert lengthOfLongestSubstring("wwkew") == 3
