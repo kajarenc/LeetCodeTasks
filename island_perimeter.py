@@ -1,5 +1,6 @@
 from typing import List
 
+
 # "brute force" approach
 class Solution:
     def islandPerimeter(self, grid: List[List[int]]) -> int:
