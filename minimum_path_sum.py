@@ -15,6 +15,8 @@ class Solution:
 
         for i in range(1, n):
             for j in range(1, m):
-                min_matrix[i][j] = min(min_matrix[i - 1][j], min_matrix[i][j - 1]) + grid[i][j]
+                min_matrix[i][j] = (
+                    min(min_matrix[i - 1][j], min_matrix[i][j - 1]) + grid[i][j]
+                )
 
         return min_matrix[n - 1][m - 1]
